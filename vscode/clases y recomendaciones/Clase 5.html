@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <h1>Formularios</h1>
+    <!-- action redirige el envio de datos a otra pagina -->
+    <!-- El metodo  es usado para enviar la informacion
+        POST=los datos se adjuntan al cuerpo de la petición.
+        GET=Los pares nombre-valor se organizan de la forma "nombre=valor" y se separan unos de otros con un signo "&". Toda esta cadena es sumada al URL de la petición.
+    -->
+    <!-- target permite redirigir a una nueva pestaña -->
+    <!-- accept-charset envia formularios en codificacion UTF-8 -->
+    <form action="resultado.html" method="post" target="_blank" accept-charset="utf-8">
+        <!-- El atributo for se utiliza para determinar el ID del elemento de entrada al que se debe asociar el título. -->
+        <label for="name">Nombre: </label>
+        <!-- Type es el atributo que define el tipo de entrada-->
+        <!-- Placeholder es el atributo para ponerle un nombre a la entrada -->
+        <!-- autocomplete permite auto completar y requierd quiere decir  -->
+        <input id="name" type="text" placeholder="Nombre" autocomplete="on" required>
+        <fieldset>
+            <legend>Login</legend>
+            <label for="email">Correo: </label>
+            <input type="email" id="email" placeholder="Correo" autocomplete="on">
+            <label for="pass">Contraseña: </label>
+            <input type="password" id="pass" placeholder="Contraseña">
+        </fieldset>
+        <fieldset>
+            <legend>Registro</legend>
+            <label for="name">Nombre: </label>
+            <input id="name" type="text" placeholder="Nombre" autocomplete="on" required><br><br>
+            <label for="lastname">Apellido: </label>
+            <input id="lastname" type="text" placeholder="Apellido" autocomplete="on" required><br><br>
+            <label for="email">Correo: </label>
+            <input id="email" type="email" placeholder="Correo" autocomplete="on" required><br><br>
+            <label for="pass">Contraseña: </label>
+            <input type="password" id="pass" placeholder="Contraseña">
+        </fieldset>
+        <fieldset>
+            <legend>Opciones Select</legend>
+            <select>
+                <option value="op1">Opcion 1</option>
+                <option value="op2">Opcion 2</option>
+                <option value="op3">Opcion 3</option>
+                <option value="op4">Opcion 4</option>
+                <option value="op5">Opcion 5</option>
+                <option value="" selected="selected">Seleccione una opcion</option>
+            </select>
+            <br>
+            <label for="desc">Dejanos tus opiniones</label>
+            <br>
+            <textarea name="desciption" id="desc" cols="30" rows="10"></textarea>
+        </fieldset>
+        <!-- Boton de envio -->
+        <input type="submit" formnovalidate value="Enviar">
+    </form>
+</body>
+
+</html>

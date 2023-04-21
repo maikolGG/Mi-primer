@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+</head>
+
+<body>
+    <h1>Sistema de gestion de reservas</h1>
+    <fieldset>
+        <legend style="color: blueviolet;">FORMULARIO OLIGATORIO</legend>
+        <form>
+            <label for="nombre" class="re">Nombre:</label>
+            <input type="text" name="nombre" id="nombre">
+            <br>
+            <label for="correo electronico" class="re">Correo electonico:</label>
+            <input type="email" name="correo electronico" id="correo electronico">
+            <br>
+            <label for="telefono" class="re">Telefono:</label>
+            <input type="tel" id="telefono">
+            <br>
+            <label for="reserva" class="re">Fecha de reserva:</label>
+            <input type="date" id="reserva">
+            <br>
+            <label for="hora" class="re">Hora:</label>
+            <input type="time" id="hora">
+            <br>
+            <label for="gente" class="re">Cnatdiad de comesales para el ingreso (min 1, max 2):</label>
+            <input type="text" id="gente">
+            <br>
+            <label for="colores" class="re"> Color del mantel:</label> 
+            <input type="color" name="colores" id="colores">
+            <br>
+            <label for="comentarios" class="re">Comentarios especiales:</label><br>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="alerjias ,enfermedades,..."></textarea>
+            <br>
+            <label for="menu" class="re">Menu:</label>
+            <br>
+            <input type="radio" id="vegetariano" name="menu">Vegetariano
+            <br>
+            <input type="radio" id="picante" name="menu">Picante
+            <br>
+            <input type="radio" id="especial" name="menu">Especial
+            <br>
+            <input type="submit" value="enviar">
+        </form>
+    </fieldset>
+</body>
+
+</html>
